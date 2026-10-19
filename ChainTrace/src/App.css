@@ -1,0 +1,21 @@
+:root {
+  --bg: #080b12;
+  --surface: #111827;
+  --surface-raised: #172033;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --accent: #f59e0b;
+  --border: rgba(148, 163, 184, 0.2);
+}
+
+body { background: var(--bg); color: var(--text); }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.page { min-height: 100vh; padding: 92px clamp(16px, 4vw, 64px) 48px; box-sizing: border-box; }
+.page-heading { max-width: 1100px; margin: 0 auto 24px; }
+.page-heading h1 { font-size: clamp(1.8rem, 4vw, 2.7rem); margin-bottom: 8px; }
+.page-heading p, .muted { color: var(--muted); }
+.panel { max-width: 1100px; margin: 0 auto; padding: 24px; border: 1px solid var(--border); background: var(--surface); border-radius: 18px; }
+.status-message { max-width: 1100px; margin: 18px auto; padding: 14px 16px; border-radius: 12px; background: #271b12; color: #fed7aa; }
+.primary-button { border: 0; border-radius: 10px; padding: 11px 16px; background: var(--accent); color: #171717; font-weight: 700; }
+.text-input { box-sizing: border-box; width: 100%; padding: 13px 14px; border: 1px solid var(--border); border-radius: 10px; background: #0b1220; color: var(--text); }

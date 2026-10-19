@@ -1,0 +1,25 @@
+.coin-detail-page .page-heading { margin-bottom: 24px; }
+.ticker { color: var(--muted); font-size: .6em; }
+.coin-detail-layout { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: minmax(280px, .8fr) minmax(0, 1.4fr); gap: 18px; align-items: start; }
+.coin-summary { margin: 0; }
+.coin-title-row { display: flex; align-items: center; gap: 14px; }
+.coin-title-row img { width: 56px; height: 56px; }
+.coin-title-row h2, .chart-panel h2 { margin: 0 0 5px; }
+.detail-currency { width: fit-content; margin-top: 24px; }
+.detail-price { margin: 18px 0 8px; font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; overflow-wrap: anywhere; }
+.detail-change { display: flex; align-items: center; gap: 7px; font-weight: 700; }
+.detail-change span { color: var(--muted); font-weight: 400; }
+.detail-stats { display: grid; gap: 14px; margin-top: 26px; }
+.detail-stats div { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.detail-stats span { color: var(--muted); }
+.detail-stats strong { text-align: right; overflow-wrap: anywhere; }
+.coin-description { margin-top: 22px; line-height: 1.7; color: #cbd5e1; }
+.chart-panel { min-width: 0; margin: 0; }
+.chart-panel h2 { display: flex; align-items: center; gap: 8px; }
+@media (max-width: 850px) { .coin-detail-layout { grid-template-columns: 1fr; } }
+.chart-content { margin-top: 18px; }
+.chart-periods { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.chart-periods button { border: 1px solid var(--border); background: #0b1220; color: #cbd5e1; padding: 8px 11px; border-radius: 8px; }
+.chart-periods button.active { color: #111827; background: #fbbf24; border-color: #fbbf24; }
+.chart-canvas { height: 330px; min-width: 0; }
+.chart-message { min-height: 150px; display: grid; place-items: center; text-align: center; }
